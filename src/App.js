@@ -12,9 +12,10 @@ import Apply from "./components/ApplyPage/apply";
 import Dashboard from "./components/Dashboard/dashboard";
 import Courses from "./components/CoursesPage/courses";
 import About from "./components/AboutPage/about";
-import Login from "./components/LoginPage/login";
-import Register from "./components/RegistrationPage/register";
+/*import Login from "./components/LoginPage/login";
+import Register from "./components/RegistrationPage/register";*/
 import Logout from "./components/LogoutPage/logout";
+import './App.css';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
             <Container>
               <Nav>
                 <Link to={"/home"} className="nav-link">
-                  <b>Internship@Stratcom</b>
+                  <b className="brand">Internship@Stratcom</b>
                 </Link>
               </Nav>
 
@@ -81,15 +82,6 @@ function App() {
             </Col>
           </Row>
         </Container>
-      </div>
-
-      <div className="auth-wrapper">
-        <div className="auth-inner">
-          <Switch>
-            <Route path="/login" component={Login} />
-            <Route path="/register" component={Register} />
-          </Switch>
-        </div>
       </div>
     </Router>
   );
