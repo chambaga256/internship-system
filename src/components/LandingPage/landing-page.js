@@ -13,7 +13,7 @@ export default class LandingPage extends Component {
         <Card className={styles.card}>
           <Jumbotron fluid>
             <Container className={styles.Header}>
-              <h1 className="display-6">Welcome to Internship@Stratcom!</h1>
+              <h1 className="display-6">Welcome!</h1>
               <p className={styles.Message}>
                 This is an online platform that lets you apply for field
                 attachment or internship at Stratcom Company Limited, Uganda.
@@ -23,6 +23,17 @@ export default class LandingPage extends Component {
                   Apply Now
                 </Link>
               </Button>
+            </Container>
+          </Jumbotron>
+        </Card>
+        <br /> <br />
+        <Card className={styles.card}>
+          <Jumbotron fluid>
+            <Container className={styles.Header}>
+              <h1 className="display-6">About Internship</h1>
+              <p className={styles.Message}>
+                The term internship or field attachment adopted for all teaching units to mean any approved field based practical work carried out by staff and students for tthe purpose of teaching and/or research in places outside the university control but where the university is responsible for the safety of its staff, students and others exposed to their activities.
+              </p>
             </Container>
           </Jumbotron>
         </Card>
