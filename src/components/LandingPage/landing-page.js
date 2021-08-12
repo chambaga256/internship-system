@@ -37,6 +37,7 @@ export default class LandingPage extends Component {
             </Container>
           </Jumbotron>
         </Card>
+        <br /> <br />
       </Container>
     );
   }

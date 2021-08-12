@@ -22,7 +22,7 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+          <Navbar collapseOnSelect expand="lg" bg="light" text="dark" variant="light" fixed="top">
             <Container>
               <Nav>
                 <Link to={"/home"} className="nav-link">
@@ -63,7 +63,7 @@ function App() {
               </Navbar.Collapse>
               </Nav>
             </Container>
-          </Navbar><br />
+          </Navbar><br /><br /><br />
         </header>
 
         <Container>
