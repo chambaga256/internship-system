@@ -17,6 +17,8 @@ export default class LandingPage extends Component {
               <p className={styles.Message}>
                 This is an online platform that lets you apply for field
                 attachment or internship at Stratcom Company Limited, Uganda.
+                <br />Sign up for practical Internship@Stratcom and acquire hands-on skills needed by employers.<br />
+                <b><i>We inspire Computing & Engineering Students</i></b>
               </p>
               <Button variant="success" bg="block">
                 <Link to={"/apply"} style={{ textDecoration: "none", color: "white" }} className="btn btn-lg">
