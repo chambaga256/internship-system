@@ -11,7 +11,6 @@ import LandingPage from "./components/LandingPage/landing-page";
 import Apply from "./components/ApplyPage/apply";
 import Dashboard from "./components/Dashboard/dashboard";
 import Courses from "./components/CoursesPage/courses";
-import About from "./components/AboutPage/about";
 /*import Login from "./components/LoginPage/login";
 import Register from "./components/RegistrationPage/register";*/
 import Logout from "./components/LogoutPage/logout";
@@ -50,11 +49,6 @@ function App() {
                     </Link>
                   </Nav>
                   <Nav>
-                    <Link to={"/about"} className="nav-link">
-                      About Us
-                    </Link>
-                  </Nav>
-                  <Nav>
                     <Link to={"/logout"} className="nav-link">
                       Logout
                     </Link>
@@ -75,7 +69,6 @@ function App() {
                   <Route path="/apply" component={Apply} />
                   <Route path="/dashboard" component={Dashboard} />
                   <Route path="/courses" component={Courses} />
-                  <Route path="/about" component={About} />
                   <Route path="/logout" component={Logout} />
                 </Switch>
               </div>
