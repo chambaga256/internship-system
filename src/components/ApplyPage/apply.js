@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Card from "react-bootstrap/Card";
 import styles from "./applyPage.css";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export default class Apply extends Component {
   render() {
@@ -71,6 +73,14 @@ export default class Apply extends Component {
             </Container>
           </Jumbotron>
         </Card>
+        <hr />
+        <div>
+          <Row>
+            <Col md={6}>
+              <p>Copyright &copy; 2021 Stratcom Company Limited</p>
+            </Col>
+          </Row>
+        </div>
         <br /> <br />
       </Container>
     );

@@ -5,6 +5,8 @@ import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import styles from "./landingPage.css";
 import { Link } from "react-router-dom";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export default class LandingPage extends Component {
   render() {
@@ -39,6 +41,14 @@ export default class LandingPage extends Component {
             </Container>
           </Jumbotron>
         </Card>
+        <hr />
+        <div>
+          <Row>
+            <Col md={6}>
+              <p>Copyright &copy; 2021 Stratcom Company Limited</p>
+            </Col>
+          </Row>
+        </div>
         <br /> <br />
       </Container>
     );

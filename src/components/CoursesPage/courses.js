@@ -5,6 +5,8 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import Card from "react-bootstrap/Card";
 import styles from "./coursesPage.css";
 import ListGroup from "react-bootstrap/ListGroup";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export default class Courses extends Component {
   render() {
@@ -71,7 +73,15 @@ export default class Courses extends Component {
             </Container>
           </Jumbotron>
         </Card>
-        <br />
+        <hr />
+        <div>
+          <Row>
+            <Col md={6}>
+              <p>Copyright &copy; 2021 Stratcom Company Limited</p>
+            </Col>
+          </Row>
+        </div>
+        <br /> <br />
       </Container>
     );
   }

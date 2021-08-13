@@ -7,13 +7,13 @@ import Col from "react-bootstrap/Col";
 import "bootstrap/dist/css/bootstrap.css";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import WelcomePage from "./components/WelcomePage/welcome-page";
 import LandingPage from "./components/LandingPage/landing-page";
 import Apply from "./components/ApplyPage/apply";
 import Dashboard from "./components/Dashboard/dashboard";
 import Courses from "./components/CoursesPage/courses";
-/*import Login from "./components/LoginPage/login";
-import Register from "./components/RegistrationPage/register";*/
-import Logout from "./components/LogoutPage/logout";
+import Login from "./components/LoginPage/login";
+import Register from "./components/RegistrationPage/register";
 import './App.css';
 
 function App() {
@@ -48,11 +48,6 @@ function App() {
                       Courses
                     </Link>
                   </Nav>
-                  <Nav>
-                    <Link to={"/logout"} className="nav-link">
-                      Logout
-                    </Link>
-                  </Nav>
                 </Nav>
               </Navbar.Collapse>
               </Nav>
@@ -65,11 +60,13 @@ function App() {
             <Col md={12}>
               <div className="wrapper">
                 <Switch>
+                  <Route exact path="/" component={WelcomePage} />
+                  <Route path="/login" component={Login} />
+                  <Route path="/register" component={Register} />
                   <Route exact path="/home" component={LandingPage} />
                   <Route path="/apply" component={Apply} />
                   <Route path="/dashboard" component={Dashboard} />
                   <Route path="/courses" component={Courses} />
-                  <Route path="/logout" component={Logout} />
                 </Switch>
               </div>
             </Col>
